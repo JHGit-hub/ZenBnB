@@ -1,0 +1,68 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/mixins" as *;
+
+.container{
+    margin-top: 1.5rem;
+}
+.form{
+    .form-filled{
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+        .nom-prenom{
+            @include Form-style;
+        }
+        .btn-form{
+            @include Form-style;
+        }
+        .adresse-email{
+            @include Form-style;
+        }
+        .phone{
+            @include Form-style;
+        }
+        .logement{
+            @include Form-style;
+            .radio{
+                @include subForm-style
+            }
+        }
+        .sejour{
+            @include Form-style;
+            .date{
+                @include subForm-style
+            }
+        }
+        .people{
+            @include Form-style;
+            .nbr-people{
+                @include subForm-style
+            }
+        }
+        .options{
+            display: flex;
+            flex-direction: column;
+            gap:1rem;
+            align-items: center;
+            color: $dark-blue;
+            .options-checkbox{
+                display: flex;
+                gap:5rem;
+            }
+        }
+        .dietSection{
+            display: flex;
+            flex-direction: column;
+            gap:1rem;
+            align-items: center;
+            color: $dark-blue;
+            .diet{
+                display:flex;
+                gap:2rem;
+                .radio{
+                    @include subForm-style;
+                }
+            }
+        }
+    }
+}

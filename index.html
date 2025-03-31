@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zen BnB Exo 2</title>
+</head>
+<body>
+    <header>
+        <div class="title"></div>
+            <h1>Bienvenue sur notre page de reservation</h1>
+        </div>
+        <div class="filter">
+            <button id="no-filter" class="primary-btn">Tous les logements</button>
+            <button id="sea" class="primary-btn">Vue sur Mer</button>
+            <button id="light" class="primary-btn">Lumineux</button>
+            <button id="space" class="primary-btn">Spacieux</button>
+            <button id="romantic" class="primary-btn">Romantique</button>
+            <button id="internet" class="primary-btn">Wifi</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container"> 
+                <form id="form" class="form">
+                    <div class="form-filled">
+                        <div class="nom-prenom">
+                            <div class=" nom">
+                                <label for="nom">Nom</label>
+                                <input type="text" id="nom" name="nom" placeholder="Tapez votre nom">
+                            </div>
+                            <div class="prenom">
+                                <label for="prenom">Prenom</label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Tapez votre prénom">
+                            </div>
+                        </div>
+                        <div class="adresse-email">
+                            <div class="adresse">
+                                <label for="adresse">Adresse</label>
+                                <input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse">
+                            </div>
+                            <div class="email">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Entrez votre email">
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Numéro de téléphone">
+                        </div>
+                        <div class="logement">
+                            <h2>Quel type de logement recherchez-vous?</h2>
+                            <div class="radio">
+                                <input type="radio" name="logement" id="logementMaison" value="maison"> Maison
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="logement" id="logementAppartement" value="appartement"> Appartement
+                            </div>
+                        </div>
+                        <div class="sejour">
+                            <h2>Quelle est la durée de votre séjour?</h2>
+                            <div class="date">
+                                <label for="arrivee">Date d'arrivée</label>
+                                <input type="date" name="arrivee" id="arrivee">
+                            </div>
+                            <div class="date">
+                                <label for="depart">Date de départ</label>
+                                <input type="date" name="depart" id="depart">
+                            </div>
+                        </div>
+                        <div class="people">
+                            <h2>Combien de personnes?</h2>
+                            <div class="nbr-people">
+                                <label for="people">Nombre de personnes</label>
+                                <input type="number" name="people" id="people">
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="options-title">
+                                <h2>Options souhaitées</h2>
+                            </div>
+                            <div class="options-checkbox">
+                                <div class="column-checkbox">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="petit_dejeuner" id="petit_dejeuner" value="Oui"> Petit Déjeuner
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="dejeuner" id="dejeuner" value="Oui"> Déjeuner
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="diner" id="diner" value="Oui"> Dîner
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="chauffeur" id="chauffeur" value="Oui"> Chauffeur
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="guide" id="guide" value="Oui"> Guide
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dietSection" id="dietSection">
+                            <h3>Choisissez votre régime alimentaire</h3>
+                            <div class="diet">
+                                <div class="radio">
+                                    <input type="radio" name="diet" id="dietVegan" value="Végan"> Végan
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="diet" id="dietGluten" value="Sans Gluten"> Sans Gluten
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="diet" id="dietFree" value="Sans spécificité"> Sans spécificité
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-form">
+                            <div class="submit">
+                                <input type="submit" value="Valider" class="validate-btn">
+                            </div>
+                            <div class="reset">
+                                <button class="secondary-btn" type="button" onclick="reset()">Nouveau Formulaire</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-results">
+                        <div id="result" class="error"></div>
+                        <div id="summary" class="summary"></div>
+                    </div>
+                    <div class="tarifs">
+                        <h4>Tarifs</h4>
+                        <ul>
+                            <li>Maison 110€ / jour</li>
+                            <li>Apartement 70€ / jour</li>
+                            <li>Chauffeur 11€ / jour</li>
+                            <li>Petit Dejeuner 15€ / personne / jour</li>
+                            <li>Dejeuner 25€ / personne/ jour</li>
+                            <li>Dîner 35€ / personne/ jour</li>
+                            <li>Guide 20€ pour le séjour</li>
+                        </ul>
+                    </div>
+                </form>
+                <div id="logements-list"></div>
+            </div>
+        </section>
+    </main>   
+</body>
+<script src="script.js"></script>
+</html>

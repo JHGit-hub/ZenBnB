@@ -1,0 +1,24 @@
+/** Import des variables et mixins **/
+
+@use "abstracts/variables" as*;
+@use "abstracts/mixins" as *;
+@use "abstracts/colors" as *;
+@use "abstracts/typography" as *;
+
+/** Import des layouts **/
+
+@use "layout/header" as *;
+@use "layout/footer" as *;
+@use "layout/grid" as *;
+@use "layout/container" as *;
+
+/** Import des composants **/
+
+@use "components/buttons/primary-btn" as *;
+@use "components/buttons/secondary-btn" as *;
+@use "components/buttons/validate-btn" as *;
+
+/** Import base **/
+
+@use "base/reset" as *;
+@use "base/global" as *;

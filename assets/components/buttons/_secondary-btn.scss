@@ -1,0 +1,11 @@
+@use "../../abstracts/colors" as*;
+
+
+.secondary-btn{
+    padding:0.5rem 2rem;
+    background-color: $red-color;
+    color: $black-color;
+    border-color: $red-color;
+    border-radius: 5px;
+    text-transform: capitalize;
+}

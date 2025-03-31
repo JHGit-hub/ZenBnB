@@ -1,0 +1,12 @@
+@use "colors" as *;
+
+@mixin Form-style{
+    display: flex;
+    justify-content: space-around;
+    color: $dark-blue;
+}
+
+@mixin subForm-style{
+    display: flex;
+    gap:0.5rem;
+}

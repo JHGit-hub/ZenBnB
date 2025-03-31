@@ -1,0 +1,11 @@
+@use "../../abstracts/colors" as*;
+
+
+.primary-btn{
+    padding:0.5rem 2rem;
+    background-color: $secondary-color;
+    color: $white-color;
+    border-color: $dark-blue;
+    border-radius: 5px;
+    text-transform: uppercase;
+}

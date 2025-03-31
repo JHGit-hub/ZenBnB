@@ -1,0 +1,29 @@
+@use "../abstracts/colors" as *;
+
+/** .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px 16px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . form-filled form-filled form-filled form-filled form-filled form-filled form-filled . ."
+      ". . form-filled form-filled form-filled form-filled form-filled form-filled form-filled . ."
+      ". . form-filled form-filled form-filled form-filled form-filled form-filled form-filled . ."
+      ". . form-filled form-filled form-filled form-filled form-filled form-filled form-filled . ."
+      ". . form-filled form-filled form-filled form-filled form-filled form-filled form-filled . ."
+      ". . form-filled form-filled form-filled form-filled form-filled form-filled form-filled . ."
+      ". . form-results form-results form-results form-results form-results form-results form-results . ."
+      ". . form-results form-results form-results form-results form-results form-results form-results . .";
+  }
+  
+  .form-filled {
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    grid-area: form-filled; }
+  
+  .form-results {
+    background-color: rgba(255, 255, 255, 0.5);
+    grid-area: form-results; }
+  **/

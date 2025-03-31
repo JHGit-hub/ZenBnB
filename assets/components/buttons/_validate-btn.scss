@@ -1,0 +1,11 @@
+@use "../../abstracts/colors" as*;
+
+
+.validate-btn{
+    padding:0.5rem 2rem;
+    background-color: $light-blue;
+    color: $dark-blue;
+    border-color: $light-blue;
+    border-radius: 5px;
+    text-transform: capitalize;
+}

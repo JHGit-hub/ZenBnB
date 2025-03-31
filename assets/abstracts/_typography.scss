@@ -1,0 +1,13 @@
+@use "colors" as *;
+
+h1{
+    text-transform: capitalize;
+    color: $white-color;
+    font-size: 3rem;
+}
+
+h2{
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: $dark-blue;
+}
